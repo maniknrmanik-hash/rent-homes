@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="rip3.png">
+  <title>Rent For Homes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      text-align: center;
+    }
+    header {
+      background: white;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(43, 123, 180, 0.31);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+      color: #0044cc;
+      font-family: "Georgia", serif;
+    }
+    .hero {
+      background: url('rip3.png');
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-content {
+      background: rgba(43, 123, 180, 0.65);
+      color: white;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 400px;
+      opacity: 0;
+  									transform: translateY(40px);
+  									filter: blur(10px);
+  									animation: slideBlur 1.2s ease-out forwards;
+								 }
+  @keyframes slideBlur {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+    .hero-content h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      font-family: Pasifico, Cursive;
+    }
+    .hero-content p {
+      font-size: 24px;
+      margin: 18px 0;
+      font-family: Georgia, serif;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 18px 32px;
+      background: #1e88e5 ;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: 0.3s;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.8);
+    }
+    .btn:hover {
+      background: #001a66;
+      box-shadow: 0 8px 12px rgba(0,0,1,0.8);
+    }
+    footer {
+      background: #ffffff;
+      color: black;
+      padding: 10px;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Get Rent To Own</h1>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Find Affordable Homes For Rent Near You</h2>
+      <p>Bad Credit, Low Income<br>No Down Options Available</p>
+      <a href="#" class="btn">🏡See Available Listings</a>
+      <a href="#" class="btn">Apply Here Now</a>
+    </div>
+  </section>
+
+  <footer>
+    Copyright ©Rental.Idea 2025
+  </footer>
+
+</body>
+</html>
